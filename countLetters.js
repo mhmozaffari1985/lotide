@@ -1,12 +1,5 @@
+const assertEqual = require('./assertEqual');
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅✅✅Assertion Passed: ${actual} ===${expected}`);
-  }
-};
-
 const countLetters = function(inputString) {
   const result = {};
   let array = inputString.split("");
@@ -19,5 +12,6 @@ const countLetters = function(inputString) {
   }
   return result;
 };
+
 // TEST CODE
 console.log(countLetters('HelloWorld!'));
